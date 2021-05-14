@@ -85,20 +85,20 @@ export class RightSidebarComponent implements OnInit, AfterViewInit {
     } else {
       this.isDarTheme = this.config.layout.variant === 'dark' ? true : false;
     }
-
-    if (localStorage.getItem('isRtl')) {
-      if (localStorage.getItem('isRtl') === 'true') {
-        this.setRTLSettings();
-      } else if (localStorage.getItem('isRtl') === 'false') {
-        this.setLTRSettings();
-      }
-    } else {
-      if (this.config.layout.rtl == true) {
-        this.setRTLSettings();
-      } else {
-        this.setLTRSettings();
-      }
-    }
+    this.setLTRSettings();
+    // if (localStorage.getItem('isRtl')) {
+    //   if (localStorage.getItem('isRtl') === 'true') {
+    //     this.setRTLSettings();
+    //   } else if (localStorage.getItem('isRtl') === 'false') {
+    //     this.setLTRSettings();
+    //   }
+    // } else {
+    //   if (this.config.layout.rtl == true) {
+    //     this.setRTLSettings();
+    //   } else {
+    //     this.setLTRSettings();
+    //   }
+    // }
   }
 
   selectTheme(e) {
