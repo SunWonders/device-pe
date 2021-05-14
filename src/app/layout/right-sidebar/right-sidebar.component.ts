@@ -86,19 +86,7 @@ export class RightSidebarComponent implements OnInit, AfterViewInit {
       this.isDarTheme = this.config.layout.variant === 'dark' ? true : false;
     }
     this.setLTRSettings();
-    // if (localStorage.getItem('isRtl')) {
-    //   if (localStorage.getItem('isRtl') === 'true') {
-    //     this.setRTLSettings();
-    //   } else if (localStorage.getItem('isRtl') === 'false') {
-    //     this.setLTRSettings();
-    //   }
-    // } else {
-    //   if (this.config.layout.rtl == true) {
-    //     this.setRTLSettings();
-    //   } else {
-    //     this.setLTRSettings();
-    //   }
-    // }
+    
   }
 
   selectTheme(e) {
@@ -227,12 +215,7 @@ export class RightSidebarComponent implements OnInit, AfterViewInit {
     localStorage.setItem('isRtl', isrtl);
     this.isRtl = event.checked;
   }
-  setRTLSettings() {
-    document.getElementsByTagName('html')[0].setAttribute('dir', 'rtl');
-    this.renderer.addClass(this.document.body, 'rtl');
-    this.isRtl = true;
-    localStorage.setItem('isRtl', 'true');
-  }
+  
   setLTRSettings() {
     document.getElementsByTagName('html')[0].removeAttribute('dir');
     this.renderer.removeClass(this.document.body, 'rtl');
