@@ -52,6 +52,7 @@ export class SigninComponent implements OnInit {
         .subscribe(
           (res) => {
             if (res) {
+              localStorage.setItem('isRtl', 'false');
               const role = this.authService.currentUserValue.role;
               if (role === Role.All || role === Role.Admin) {
                 this.router.navigate(['/extra-pages/blank']);
