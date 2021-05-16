@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { BrandData } from "../models/brand-data";
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,8 +27,8 @@ export class BrandService {
     this.brandUpdateUrl=environment.brandUpdateUrl;
   }
 
-  getBrands(): Observable<BrandData> {
-    return this.http.get<BrandData>(this.brandUrl)
+  getBrands(): Observable<any> {
+    return this.http.get<any>(this.brandUrl)
   }
 
   save(data:any):Observable<any>{
