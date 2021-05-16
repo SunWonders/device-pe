@@ -1,27 +1,83 @@
-# Angularlight
+# devicepe
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/SunWonders/device-pe">
+    <img src="https://i.ibb.co/F3WMqGD/bg02500x500.png" width="80" height="80">
+  </a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+  <h3 align="center">Device Pe</h3>
 
-## Development server
+  
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributers</a></li>
+   
+  </ol>
+</details>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Device Pe is application build for selling old mobile , tablet devices through android and ios application.
 
-## Running end-to-end tests
+### Built With
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+This section should list any major frameworks that you built your project using.
+* Angular
 
-## Further help
+<!-- GETTING STARTED -->
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/SunWonders/device-pe.git
+   ```
+2. Navigate to folder device-pe
+    ```
+   npm install
+   ```
+4. Start the angular project
+   ```
+   ng serve
+   ```
+5. Access your application through browser
+   i.e http://localhost:4200
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+
+<!-- CONTACT -->
+## Contact
+
+Please share your feedbacks at support@sunwonders.com
+
+
