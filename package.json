@@ -36,6 +36,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "@swimlane/ngx-charts": "^17.0.0",
     "@swimlane/ngx-datatable": "^19.0.0",
+    "@syncfusion/ej2-angular-grids": "^19.1.63",
     "@types/d3-shape": "^2.0.0",
     "acorn": "^8.0.4",
     "angular-gauge": "^4.0.0",
