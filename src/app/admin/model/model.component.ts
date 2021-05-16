@@ -25,7 +25,7 @@ export class ModelComponent implements OnInit {
     this.data = [
    
     ];
-    this.modelService.getAccessories().subscribe(data => {
+    this.modelService.getModels().subscribe(data => {
       
     console.log(data.data);
     this.data=data.data;

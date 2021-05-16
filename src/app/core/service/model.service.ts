@@ -24,7 +24,7 @@ export class ModelService {
     this.modelsUpdateUrl=environment.modelsUpdateUrl;
   }
 
-  getAccessories(): Observable<any> {
+  getModels(): Observable<any> {
     return this.http.get<any>(this.modelsUrl)
   }
   

@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class VarientService {
+export class VarientChecklistService {
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -14,21 +14,21 @@ export class VarientService {
     })
   };
 
-  varientsUrl:string;
+  varientCheckListUrl:string;
 
-  varientsUpdateUrl:string;
+  varientCheckListUpdateUrl:string;
 
   constructor(private http: HttpClient) { 
 
-    this.varientsUrl=environment.varientsUrl;
-    this.varientsUpdateUrl=environment.varientsUpdateUrl;
+    this.varientCheckListUrl=environment.varientsCheckListUrl;
+    this.varientCheckListUpdateUrl=environment.varientsCheckListUpdateUrl;
   }
 
-  getVarients(): Observable<any> {
-    return this.http.get<any>(this.varientsUrl)
+  getVarientCheckList(): Observable<any> {
+    return this.http.get<any>(this.varientCheckListUrl)
   }
   
   update(data:any):Observable<any>{
-    return this.http.put<any>(this.varientsUpdateUrl, data, this.httpOptions);
+    return this.http.put<any>(this.varientCheckListUpdateUrl, data, this.httpOptions);
   }
 }

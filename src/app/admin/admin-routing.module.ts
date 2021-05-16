@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { BrandComponent } from './brand/brand.component';
 import { ModelComponent } from './model/model.component';
+import { VarientChecklistComponent } from './varient-checklist/varient-checklist.component';
 import { VarientComponent } from './varient/varient.component';
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'varients',
     component:VarientComponent,
+  },
+  {
+    path:'checklist',
+    component:VarientChecklistComponent,
   },
   {
     path: 'dashboard',

@@ -1,0 +1,84 @@
+<section class="content">
+    <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="breadcrumb breadcrumb-style ">
+              <li class="breadcrumb-item">
+                <h4 class="page-title">Varient Check Lists</h4>
+              </li>
+              <li class="breadcrumb-item bcrumb-1">
+                <a routerLink="/admin/dashboard/main">
+                  <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="breadcrumb-item bcrumb-2">
+                <a routerLink="/admin/dashboard/main">
+                  Varient</a>
+              </li>
+          
+              <li class="breadcrumb-item active">Varient Check List's</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="card">
+            <div class="header">
+              <h2>Varient Check Lists</h2>
+            </div>
+            <div class="body">
+            
+              <!-- Add content here -->
+              <ejs-grid [editSettings]='editSettings'  [toolbar]='toolbar'  [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true'
+   
+              [filterSettings]='filterSettings' [allowGrouping]='true'  (actionBegin)='actionBegin($event)'>
+   
+                <e-columns>
+               
+                    <!-- textAlign='Right' width='120' -->
+
+                    <e-column  field='varient'  headerText='Varient Name' width='200'>
+
+        
+
+                    </e-column>
+
+                  <e-column  field='description'  headerText='Description' width='350'>
+
+        
+
+                  </e-column>
+
+
+                 
+             
+               
+                  <e-column field='type' headerText='Type'>
+                   
+                       
+                  
+
+                  </e-column>
+                  <!-- <e-column field='type' headerText='Type'>
+                   
+                       
+                  
+
+                </e-column> -->
+                 
+
+                  <!-- <e-column field='Freight' textAlign='Right' format='c2' width='120'></e-column>
+               
+                  <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column> -->
+               
+                </e-columns>
+               
+              </ejs-grid>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

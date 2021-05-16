@@ -8,13 +8,15 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ModelComponent } from './model/model.component';
 import { VarientComponent } from './varient/varient.component';
+import { VarientChecklistComponent } from './varient-checklist/varient-checklist.component';
 
 @NgModule({
   declarations: [
     BrandComponent,
     AccessoriesComponent,
     ModelComponent,
-    VarientComponent
+    VarientComponent,
+    VarientChecklistComponent
   ],
   imports: [CommonModule, AdminRoutingModule,GridModule,MatSlideToggleModule],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

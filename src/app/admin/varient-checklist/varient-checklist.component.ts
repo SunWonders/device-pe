@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { EditSettingsModel, ToolbarItems, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
-import { VarientService } from 'src/app/core/service/varient.service';
+import { VarientChecklistService } from 'src/app/core/service/varient-checklist.service';
 
 @Component({
-  selector: 'app-varient',
-  templateUrl: './varient.component.html',
-  styleUrls: ['./varient.component.sass']
+  selector: 'app-varient-checklist',
+  templateUrl: './varient-checklist.component.html',
+  styleUrls: ['./varient-checklist.component.sass']
 })
-export class VarientComponent implements OnInit {
+export class VarientChecklistComponent implements OnInit {
 
   public data: object[];
   public filterSettings: Object;
   public editSettings: EditSettingsModel;
   public toolbar: ToolbarItems[];
-  public varientsData: object;
-  constructor(private varientService:VarientService) {}
+  public varientsCheckListData: object;
+  constructor(private varientCheckListService:VarientChecklistService) {}
 
   ngOnInit() {
    
@@ -25,7 +25,7 @@ export class VarientComponent implements OnInit {
     this.data = [
    
     ];
-    this.varientService.getVarients().subscribe(data => {
+    this.varientCheckListService.getVarientCheckList().subscribe(data => {
       
    // console.log(data.data);
     this.data=data.data;
@@ -42,18 +42,18 @@ export class VarientComponent implements OnInit {
   actionBegin(args: SaveEventArgs) {
 
     if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-        this.varientsData = Object.assign({}, args.rowData);
+        this.varientsCheckListData = Object.assign({}, args.rowData);
     }
   //console.log(args)
     if (args.requestType === 'save') {
       if(args.data['id']==undefined){
-        this.varientService.update(args.data).subscribe(data => {
+        this.varientCheckListService.update(args.data).subscribe(data => {
           console.log(data.data);
         });
         console.log("saveData",args.data)
       }else
       {
-        this.varientService.update(args.data).subscribe(data => {
+        this.varientCheckListService.update(args.data).subscribe(data => {
           console.log(data.data);
         });
         console.log("updateData",args.data)
@@ -62,4 +62,5 @@ export class VarientComponent implements OnInit {
     }
     
 }
+
 }
