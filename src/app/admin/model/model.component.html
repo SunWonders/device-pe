@@ -1,0 +1,87 @@
+<section class="content">
+    <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="breadcrumb breadcrumb-style ">
+              <li class="breadcrumb-item">
+                <h4 class="page-title">Models</h4>
+              </li>
+              <li class="breadcrumb-item bcrumb-1">
+                <a routerLink="/admin/dashboard/main">
+                  <i class="fas fa-home"></i> Home</a>
+              </li>
+          
+              <li class="breadcrumb-item active">Models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="card">
+            <div class="header">
+              <h2>Models</h2>
+            </div>
+            <div class="body">
+            
+              <!-- Add content here -->
+              <ejs-grid [editSettings]='editSettings'  [toolbar]='toolbar'  [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true'
+   
+              [filterSettings]='filterSettings' [allowGrouping]='true'  (actionBegin)='actionBegin($event)'>
+   
+                <e-columns>
+               
+                    <!-- textAlign='Right' width='120' -->
+
+                    <e-column  field='brandName'  headerText='Brand Name' width='250'>
+
+        
+
+                    </e-column>
+
+                  <e-column  field='modelName'  headerText='Model Name' width='250'>
+
+        
+
+                  </e-column>
+
+
+                 
+             
+               
+                  <e-column field='modelIconUrl' headerText='Model Icon'>
+                    <ng-template #template let-data>
+                
+                        <div class="image"> 
+                            <img width="10%" src="{{data.modelIconUrl}}"  /> 
+                        </div> 
+                       
+                    </ng-template>
+    
+
+                  </e-column>
+                  <e-column field='isActive' headerText='Active'>
+                    <ng-template #template let-data>
+
+                        <mat-slide-toggle  [checked]="data.isActive==1?true:false" [disabled]="true"></mat-slide-toggle>
+                    </ng-template>
+    
+
+                  </e-column>
+               
+
+                  <!-- <e-column field='Freight' textAlign='Right' format='c2' width='120'></e-column>
+               
+                  <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column> -->
+               
+                </e-columns>
+               
+              </ejs-grid>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

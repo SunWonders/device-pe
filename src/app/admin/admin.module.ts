@@ -6,11 +6,13 @@ import { BrandComponent } from './brand/brand.component';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AccessoriesComponent } from './accessories/accessories.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   declarations: [
     BrandComponent,
-    AccessoriesComponent
+    AccessoriesComponent,
+    ModelComponent
   ],
   imports: [CommonModule, AdminRoutingModule,GridModule,MatSlideToggleModule],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
