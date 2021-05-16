@@ -11,8 +11,10 @@ export const environment = {
   accessoriesUrl:'http://34.70.99.100:6090/devicePe-ws/v1/accessories/find/all',
   accessoriesUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/accessories/update',
   modelsUrl:'http://34.70.99.100:6090/devicePe-ws/v1/models/find/all',
-  modelsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/models/update'
-};
+  modelsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/models/update',
+  varientsUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/find/all',
+  varientsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/update'
+};  
 
 /*
  * For easier debugging in development mode, you can import the following file

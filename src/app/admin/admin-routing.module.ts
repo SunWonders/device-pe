@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { BrandComponent } from './brand/brand.component';
 import { ModelComponent } from './model/model.component';
+import { VarientComponent } from './varient/varient.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'models',
     component:ModelComponent,
+  },
+  {
+    path:'varients',
+    component:VarientComponent,
   },
   {
     path: 'dashboard',
