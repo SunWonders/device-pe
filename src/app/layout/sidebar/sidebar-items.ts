@@ -44,7 +44,7 @@ export const ROUTES: RouteInfo[] = [
   //   ],
   // },
 
-  
+
 
   // Common Module
 
@@ -140,7 +140,7 @@ export const ROUTES: RouteInfo[] = [
   //     },
   //   ],
   // }
-  
+
   ,
   {
     path: '',
@@ -154,7 +154,7 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Admin'],
     submenu: [
-      
+
       {
         path: '/admin/accessories',
         title: 'Accessories',
@@ -167,7 +167,7 @@ export const ROUTES: RouteInfo[] = [
         badgeClass: '',
         role: [''],
         submenu: [],
-      },{
+      }, {
         path: '/admin/brand',
         title: 'Brand',
         moduleName: 'admin',
@@ -179,7 +179,7 @@ export const ROUTES: RouteInfo[] = [
         badgeClass: '',
         role: [''],
         submenu: [],
-      },{
+      }, {
         path: '/admin/models',
         title: 'Model',
         moduleName: 'admin',
@@ -191,13 +191,13 @@ export const ROUTES: RouteInfo[] = [
         badgeClass: '',
         role: [''],
         submenu: [],
-      },{
+      }, {
         path: '/admin/varients',
         title: 'Varients',
         moduleName: 'admin',
-        iconType: 'material-icons-two-tone',
-        icon: 'slideshow',
-        class: 'menu-toggle',
+        iconType: '',
+        icon: '',
+        class: 'ml-sub-menu',
         groupTitle: false,
         badge: '',
         badgeClass: '',
@@ -209,27 +209,27 @@ export const ROUTES: RouteInfo[] = [
             moduleName: 'admin',
             iconType: '',
             icon: '',
-            class: 'ml-menu',
+            class: 'ml-sub-sub-menu',
             groupTitle: false,
             badge: '',
             badgeClass: '',
             role: [''],
             submenu: [],
-          },{
-          path: '/admin/checklist',
-          title: 'Check Lists',
-          moduleName: 'admin',
-          iconType: '',
-          icon: '',
-          class: 'ml-menu',
-          groupTitle: false,
-          badge: '',
-          badgeClass: '',
-          role: [''],
-          submenu: [],
-        }],
+          }, {
+            path: '/admin/checklist',
+            title: 'Check Lists',
+            moduleName: 'admin',
+            iconType: '',
+            icon: '',
+            class: 'ml-sub-sub-menu',
+            groupTitle: false,
+            badge: '',
+            badgeClass: '',
+            role: [''],
+            submenu: [],
+          }],
       }
-      
+
     ],
   },
   // {
