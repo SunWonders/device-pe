@@ -55,7 +55,8 @@ export class SigninComponent implements OnInit {
               
               const role = this.authService.currentUserValue.role;
               if (role === Role.All || role === Role.Admin) {
-                this.router.navigate(['/extra-pages/blank']);
+                this.router.navigate(['/admin/accessories']);
+               // this.router.navigate(['/extra-pages/blank']);
               } else if (role === Role.Teacher) {
                 this.router.navigate(['/teacher/dashboard']);
               } else if (role === Role.Student) {

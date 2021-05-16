@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AccessoriesComponent } from './accessories/accessories.component';
 import { BrandComponent } from './brand/brand.component';
 
 const routes: Routes = [
@@ -7,6 +8,10 @@ const routes: Routes = [
     path:'brand',
     component:BrandComponent,
   
+  },
+  {
+    path:'accessories',
+    component:AccessoriesComponent,
   },
   {
     path: 'dashboard',

@@ -154,7 +154,20 @@ export const ROUTES: RouteInfo[] = [
     badgeClass: '',
     role: ['Admin'],
     submenu: [
+      
       {
+        path: '/admin/accessories',
+        title: 'Accessories',
+        moduleName: 'admin',
+        iconType: '',
+        icon: '',
+        class: 'ml-menu',
+        groupTitle: false,
+        badge: '',
+        badgeClass: '',
+        role: [''],
+        submenu: [],
+      },{
         path: '/admin/brand',
         title: 'Brand',
         moduleName: 'admin',
