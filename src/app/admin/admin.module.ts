@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AuthenticationRoutingModule } from '../authentication/authentication-routing.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MaterialFileInputModule } from 'ngx-material-file-input';
     ModelComponent,
     VarientComponent,
     VarientChecklistComponent,
-    BulkComponent
+    BulkComponent,
+    ProfileComponent
   ],
   imports: [CommonModule, AdminRoutingModule, GridModule, MatSlideToggleModule, CommonModule,
     FormsModule,

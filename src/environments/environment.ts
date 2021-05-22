@@ -16,7 +16,10 @@ export const environment = {
   varientsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/update',
   varientsCheckListUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/find/all',
   varientsCheckListUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/update',
-  bulkUploadUrl:'http://34.70.99.100:6090/devicePe-ws/v1/devices/import'
+  bulkUploadUrl:'http://34.70.99.100:6090/devicePe-ws/v1/devices/import',
+  otpValidateUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/validate',
+  registerUrl:'http://34.70.99.100:6090/user-ws/v1/register',
+  resendOtpUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/resend'
 };  
 
 /*

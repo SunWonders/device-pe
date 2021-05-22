@@ -3,17 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'main',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'main',
+  //   pathMatch: 'full',
+  // },
   {
     path: 'main',
     component: MainComponent,
   },
   {
-    path: 'dashboard2',
+    path: '',
     component: Dashboard2Component,
   }
 ];

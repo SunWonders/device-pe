@@ -1,0 +1,64 @@
+<div class="auth-container">
+    <div class="row auth-main">
+      <div class="col-sm-6 px-0 d-none d-sm-block">
+        <div class="left-img" style="background-image: url(assets/images/pages/bg-01.png);">
+        </div>
+      </div>
+      <div class="col-sm-6 auth-form-section">
+        <div class="form-section">
+          <div class="auth-wrapper">
+            <h2 class="welcome-msg"> Otp </h2>
+            <p class="auth-signup-text text-muted">Enter your OTP</p>
+            <form class="validate-form" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Phone Number</mat-label>
+                      <input matInput formControlName="phoneNumber" required readonly>
+                      <mat-icon matSuffix>phone</mat-icon>
+                      <mat-error *ngIf="authForm.get('phoneNumber').hasError('required')">
+                        Phone Number is required
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Otp</mat-label>
+                      <input matInput formControlName="otp" [type]="hide ? 'otp' : 'text'" required>
+                      <mat-icon matSuffix (click)="hide = !hide">
+                        {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      <mat-error *ngIf="authForm.get('otp').hasError('required')">
+                        Otp is required
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="flex-sb-m w-full  p-b-20">
+                    <div>
+                      <span>Otp Expired? <a [routerLink]=""  (click)="resendOtp()">
+                          Resend Otp
+                        </a></span>
+                    </div>
+                  </div>
+                <div class="container-auth-form-btn">
+                    <button mat-flat-button color="primary" class="auth-form-btn" [disabled]="!authForm.valid " type="submit">
+                      Validate
+                    </button>
+                  </div>
+
+                </form>
+
+                
+            
+          </div>
+
+          
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
