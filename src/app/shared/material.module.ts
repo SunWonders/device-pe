@@ -23,6 +23,9 @@ const materialModules = [
   MatButtonToggleModule,
   MatFormFieldModule,
   MatSlideToggleModule,
+  MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
 ];
 
 @NgModule({

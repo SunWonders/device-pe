@@ -228,6 +228,19 @@ export const ROUTES: RouteInfo[] = [
             role: [''],
             submenu: [],
           }],
+      },
+      {
+        path: '/admin/bulk/upload',
+        title: 'Bulk Upload',
+        moduleName: 'admin',
+        iconType: '',
+        icon: '',
+        class: 'ml-menu',
+        groupTitle: false,
+        badge: '',
+        badgeClass: '',
+        role: [''],
+        submenu: [],
       }
 
     ],

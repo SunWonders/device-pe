@@ -11,6 +11,7 @@ export const environment = {
   varientsUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/find/all',
   varientsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/update',
   varientsCheckListUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/find/all',
-  varientsCheckListUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/update'
+  varientsCheckListUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/update',
+  bulkUploadUrl:'http://34.70.99.100:6090/devicePe-ws/v1/devices/import'
   
 };
