@@ -19,7 +19,8 @@ export const environment = {
   bulkUploadUrl:'http://34.70.99.100:6090/devicePe-ws/v1/devices/import',
   otpValidateUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/validate',
   registerUrl:'http://34.70.99.100:6090/user-ws/v1/register',
-  resendOtpUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/resend'
+  resendOtpUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/resend',
+  fileUploadUrl:'http://34.70.99.100:6090/fileuploader-ws/v1/upload'
 };  
 
 /*

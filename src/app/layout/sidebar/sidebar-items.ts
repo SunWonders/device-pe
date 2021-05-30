@@ -241,6 +241,18 @@ export const ROUTES: RouteInfo[] = [
         badgeClass: '',
         role: [''],
         submenu: [],
+      }, {
+        path: '/admin/file/upload',
+        title: 'File Upload and Share',
+        moduleName: 'admin',
+        iconType: '',
+        icon: '',
+        class: 'ml-menu',
+        groupTitle: false,
+        badge: '',
+        badgeClass: '',
+        role: [''],
+        submenu: [],
       }
 
     ],

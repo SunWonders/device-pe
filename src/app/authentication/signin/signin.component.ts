@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/core/service/auth.service';
 import { Role } from 'src/app/core/models/role';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -17,7 +19,8 @@ export class SigninComponent implements OnInit {
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private _snackBar: MatSnackBar
   ) {}
   ngOnInit() {
     this.authForm = this.formBuilder.group({
@@ -70,14 +73,22 @@ export class SigninComponent implements OnInit {
                 this.router.navigate(['/authentication/signin']);
                }
             } else {
+              this.openSnackBar('Some thing went wrong please try again')
               this.error = 'Invalid Login';
             }
           },
           (error) => {
+            this.openSnackBar('Invalid Username or Password !! Please try again')
             this.error = error;
             this.submitted = false;
           }
         );
     }
+  }
+
+  openSnackBar(message: string) {
+    this._snackBar.open(message, 'OK', {
+      duration: 10000
+    });
   }
 }

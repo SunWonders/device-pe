@@ -19,6 +19,7 @@ import { AuthenticationRoutingModule } from '../authentication/authentication-ro
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 import { ProfileComponent } from './profile/profile.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProfileComponent } from './profile/profile.component';
     VarientComponent,
     VarientChecklistComponent,
     BulkComponent,
-    ProfileComponent
+    ProfileComponent,
+    FileuploadComponent
   ],
   imports: [CommonModule, AdminRoutingModule, GridModule, MatSlideToggleModule, CommonModule,
     FormsModule,
