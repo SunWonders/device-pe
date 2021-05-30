@@ -40,13 +40,9 @@ export class Dashboard2Component implements OnInit {
     this.lineChartOptions = {
       series: [
         {
-          name: 'Teacher 1',
+          name: 'Order',
           data: [15, 13, 30, 23, 13, 32, 27],
-        },
-        {
-          name: 'Teacher 2',
-          data: [12, 25, 14, 18, 27, 13, 21],
-        },
+        }
       ],
       chart: {
         height: 270,
@@ -64,7 +60,7 @@ export class Dashboard2Component implements OnInit {
           show: false,
         },
       },
-      colors: ['#9F78FF', '#858585'],
+      colors: ['#9F78FF'],
       stroke: {
         curve: 'smooth',
       },

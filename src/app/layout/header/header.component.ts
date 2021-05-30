@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
     if (userRole === Role.Admin) {
       //this.homePage = 'admin/dashboard/main';
-      this.homePage='extra-pages/blank';
+      this.homePage='admin/dashboard';
     }
 
    
