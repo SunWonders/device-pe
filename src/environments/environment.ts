@@ -20,7 +20,8 @@ export const environment = {
   otpValidateUrl:'http://3.18.201.167:6090/notification-ws/v1/otp/validate',
   registerUrl:'http://3.18.201.167:6090/user-ws/v1/register',
   resendOtpUrl:'http://3.18.201.167:6090/notification-ws/v1/otp/resend',
-  fileUploadUrl:'http://3.18.201.167:6090/fileuploader-ws/v1/upload'
+  fileUploadUrl:'http://3.18.201.167:6090/fileuploader-ws/v1/upload',
+  ordersUrl:'http://3.18.201.167:6090/devicePe-ws/v1/orders/all',
 };  
 
 /*

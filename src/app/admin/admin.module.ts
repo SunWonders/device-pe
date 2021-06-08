@@ -20,6 +20,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 import { ProfileComponent } from './profile/profile.component';
 import { FileuploadComponent } from './fileupload/fileupload.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
     VarientChecklistComponent,
     BulkComponent,
     ProfileComponent,
-    FileuploadComponent
+    FileuploadComponent,
+    OrdersComponent
   ],
   imports: [CommonModule, AdminRoutingModule, GridModule, MatSlideToggleModule, CommonModule,
     FormsModule,

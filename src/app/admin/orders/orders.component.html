@@ -1,0 +1,83 @@
+<section class="content">
+    <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="breadcrumb breadcrumb-style ">
+              <li class="breadcrumb-item">
+                <h4 class="page-title">Orders</h4>
+              </li>
+              <li class="breadcrumb-item bcrumb-1">
+                <a routerLink="/admin/dashboard/main">
+                  <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="breadcrumb-item bcrumb-2">
+                <a routerLink="/admin/dashboard/main">
+                   Application </a>
+              </li>
+              <li class="breadcrumb-item active">Orders</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="card">
+            <div class="header">
+              <h2>Orders</h2>
+            </div>
+            <div class="body">
+              <ejs-grid [editSettings]='editSettings'  [toolbar]='toolbar'  [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true'
+   
+              [filterSettings]='filterSettings' [allowGrouping]='true'  (actionBegin)='actionBegin($event)'>
+   
+                <e-columns>
+               
+                
+
+                    <e-column  field='orderId'  headerText='Order ID' width='250'>
+
+        
+
+                    </e-column>
+
+                  <e-column  field='status'  headerText='Status' width='250'>
+
+        
+
+                  </e-column>
+
+
+                 
+             
+               
+                  <e-column field='description' headerText='Description'>
+                 
+    
+
+                  </e-column>
+                  <e-column field='orderCreatedDate' headerText='Order Created Date'>
+                    <ng-template #template let-data>
+
+                        {{data.orderCreatedDate | date:'dd/MM/yyyy HH:mm:ss' }}
+                    </ng-template>
+    
+
+                  </e-column>
+               
+
+                  <!-- <e-column field='Freight' textAlign='Right' format='c2' width='120'></e-column>
+               
+                  <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column> -->
+               
+                </e-columns>
+               
+              </ejs-grid>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

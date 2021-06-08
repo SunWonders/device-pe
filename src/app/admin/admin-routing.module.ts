@@ -7,7 +7,7 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
 import { ModelComponent } from './model/model.component';
 import { VarientChecklistComponent } from './varient-checklist/varient-checklist.component';
 import { VarientComponent } from './varient/varient.component';
-
+import { OrdersComponent } from './orders/orders.component';
 const routes: Routes = [
   {
     path:'brand',
@@ -37,6 +37,11 @@ const routes: Routes = [
   {
     path:'file/upload',
     component:FileuploadComponent,
+  },
+  {
+    path:'orders',
+    component:OrdersComponent,
+  
   },
   {
     path: 'dashboard',
