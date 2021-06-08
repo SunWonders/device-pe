@@ -4,23 +4,23 @@
 
 export const environment = {
   production: false,
-  loginUrl: 'http://34.70.99.100:6090/authenticate',
-  brandUrl:'http://34.70.99.100:6090/devicePe-ws/v1/brands/find/all',
-  brandSaveUrl:'http://34.70.99.100:6090/devicePe-ws/v1/brands/save',
-  brandUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/brands/update',
-  accessoriesUrl:'http://34.70.99.100:6090/devicePe-ws/v1/accessories/find/all',
-  accessoriesUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/accessories/update',
-  modelsUrl:'http://34.70.99.100:6090/devicePe-ws/v1/models/find/all',
-  modelsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/models/update',
-  varientsUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/find/all',
-  varientsUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/update',
-  varientsCheckListUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/find/all',
-  varientsCheckListUpdateUrl:'http://34.70.99.100:6090/devicePe-ws/v1/varients/checklst/update',
-  bulkUploadUrl:'http://34.70.99.100:6090/devicePe-ws/v1/devices/import',
-  otpValidateUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/validate',
-  registerUrl:'http://34.70.99.100:6090/user-ws/v1/register',
-  resendOtpUrl:'http://34.70.99.100:6090/notification-ws/v1/otp/resend',
-  fileUploadUrl:'http://34.70.99.100:6090/fileuploader-ws/v1/upload'
+  loginUrl: 'http://3.18.201.167:6090/authenticate',
+  brandUrl:'http://3.18.201.167:6090/devicePe-ws/v1/brands/find/all',
+  brandSaveUrl:'http://3.18.201.167:6090/devicePe-ws/v1/brands/save',
+  brandUpdateUrl:'http://3.18.201.167:6090/devicePe-ws/v1/brands/update',
+  accessoriesUrl:'http://3.18.201.167:6090/devicePe-ws/v1/accessories/find/all',
+  accessoriesUpdateUrl:'http://3.18.201.167:6090/devicePe-ws/v1/accessories/update',
+  modelsUrl:'http://3.18.201.167:6090/devicePe-ws/v1/models/find/all',
+  modelsUpdateUrl:'http://3.18.201.167:6090/devicePe-ws/v1/models/update',
+  varientsUrl:'http://3.18.201.167:6090/devicePe-ws/v1/varients/find/all',
+  varientsUpdateUrl:'http://3.18.201.167:6090/devicePe-ws/v1/varients/update',
+  varientsCheckListUrl:'http://3.18.201.167:6090/devicePe-ws/v1/varients/checklst/find/all',
+  varientsCheckListUpdateUrl:'http://3.18.201.167:6090/devicePe-ws/v1/varients/checklst/update',
+  bulkUploadUrl:'http://3.18.201.167:6090/devicePe-ws/v1/devices/import',
+  otpValidateUrl:'http://3.18.201.167:6090/notification-ws/v1/otp/validate',
+  registerUrl:'http://3.18.201.167:6090/user-ws/v1/register',
+  resendOtpUrl:'http://3.18.201.167:6090/notification-ws/v1/otp/resend',
+  fileUploadUrl:'http://3.18.201.167:6090/fileuploader-ws/v1/upload'
 };  
 
 /*

@@ -39,7 +39,11 @@ export class AuthService {
       .pipe(
         map((user) => {
           // store user details and jwt token in local storage to keep user logged in between page refreshes
-
+if(user.img==undefined||user.img=='')
+{
+  user.img='https://image.pngaaa.com/159/3782159-middle.png';
+}
+          
           localStorage.setItem('currentUser', JSON.stringify(user));
           this.currentUserSubject.next(user);
           return user;

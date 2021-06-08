@@ -17,6 +17,12 @@ export class SignupComponent implements OnInit {
   chide = true;
   registerData:any;
 
+  roles: any[] = [
+    {value: 'Vendor', viewValue: 'Vendor'},
+    {value: 'Admin', viewValue: 'Administrator'},
+    {value: 'Customer', viewValue: 'Customer'}
+  ];
+
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
@@ -36,7 +42,8 @@ export class SignupComponent implements OnInit {
 
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
-      middleName: ['', Validators.required]
+      middleName: [''],
+      typeOfUser:['',Validators.required]
     });
     // get return url from route parameters or default to '/'
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
@@ -53,8 +60,9 @@ export class SignupComponent implements OnInit {
       this.registerData ={
         "phoneNumber":this.authForm.value['phoneNumber'],
         "password":this.authForm.value['password'],
-        "typeOfUser":'Vendor',
+        "typeOfUser":this.authForm.value['typeOfUser'],
         "application":'DevicePe',
+        "emailId":this.authForm.value['email'],
         "firstName":this.authForm.value['firstName'],
         "lastName":this.authForm.value['lastName'],
         "middleName":this.authForm.value['middleName']
@@ -70,7 +78,7 @@ export class SignupComponent implements OnInit {
         this.openSnackBar('Registered Successfully');
         this.router.navigate(['/authentication/otp']);
       }, err => {
-
+        this.openSnackBar('Error Occured Please Try Again');
         console.log(err);
       });
 
